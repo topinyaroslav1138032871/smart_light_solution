@@ -1,0 +1,33 @@
+path: path_to_data
+train: data\train
+val: data\test
+
+nc: 20
+names: ['person', '1', '2', '3', '4', '5', '6',
+'7', '8', '9', '10', '11', '12', '13',
+'14', '15', '16', '17':, '18', '19']
+
+img-size: 640
+batch-size: 4
+epochs: 10
+lr0: 0.01
+lrf: 0.2
+momentum: 0.937
+weight_decay: 0.0005
+
+iou-thres: 0.25
+nms-thres: 0.6
+
+mosaic: 1.0
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+scale: 0.5
+flipud: 0.5
+fliplr: 0.5
+degrees: 10
+
+optimizer: 'Adam'
+
+multi-scale: True
+warmup-epochs: 3
